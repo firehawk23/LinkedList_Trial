@@ -8,7 +8,7 @@ class LinkedList:
         self.head = None
         
     def __print__(self):
-        pass
+        return
         
     def insert(self,data):
         node = LLNode(data)
