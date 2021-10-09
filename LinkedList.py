@@ -6,7 +6,10 @@ class LLNode:
 class LinkedList:
     def __init__(self):
         self.head = None
-
+        
+    def __print__(self):
+        pass
+        
     def insert(self,data):
         node = LLNode(data)
         if self.head is None:
