@@ -23,3 +23,9 @@ class LinkedList:
             if self.data == val:
                 return "Found!"
         return "Not Found!"
+    
+    def display(self):
+        head = self
+        while head:
+            print(head.data)
+            head = head.next
