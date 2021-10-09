@@ -8,6 +8,10 @@ class LinkedList:
         self.head = None
         
     def __print__(self):
+        head = self
+        while head:
+            print(head.data)
+            head = head.next
         return
         
     def insert(self,data):
@@ -19,7 +23,7 @@ class LinkedList:
         while curr.next is not None:
             curr = curr.next
         curr.next = node
-        #return
+        return
     
     def find(self, val):
         while self.next is not None:
